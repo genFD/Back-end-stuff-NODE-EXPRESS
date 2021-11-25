@@ -1,0 +1,16 @@
+[
+ {
+  "name": "cooper branch",
+  "address": "51st montreal",
+  "cuisine": "euro",
+  "website": "http://www.copperbrranch.com",
+  "description": "it's awesome"
+ },
+ {
+  "name": "donda",
+  "address": "21 kanyewestst",
+  "cuisine": "american",
+  "website": "http://www.knayewest.com",
+  "description": "it's crazy"
+ }
+]
