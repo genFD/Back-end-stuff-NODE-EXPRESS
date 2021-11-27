@@ -81,5 +81,21 @@ app.get('/restaurants', (request, response) => {
   });
 });
 
+app.get('/restaurants/:id', (request, response) => {
+  // const restaurantsHtmlFile = path.join(__dirname, 'views', 'restaurants.html');
+  // response.sendFile(restaurantsHtmlFile);
+  const restaurantId = request.params.id;
+  response.render('restaurant-details', {
+    restaurantId,
+  });
+  // const filePath = path.join(__dirname, 'data', 'restaurants.json');
+  // const filedata = fs.readFileSync(filePath);
+  // const storedRestaurants = JSON.parse(filedata);
+  // response.render('restaurants', {
+  //   restaurantsnumber: storedRestaurants.length,
+  //   restaurants: storedRestaurants,
+  // });
+});
+
 // 5. listen to a port i.e incoming network traffic
 app.listen(3008);
