@@ -16,6 +16,7 @@ GOALS
 // 1. import filesystem, express library, path to build path
 const fs = require('fs');
 const express = require('express');
+const uuid = require('uuid');
 const path = require('path');
 
 // 2. invoke express
@@ -61,6 +62,7 @@ app.get('/recommend', (request, response) => {
 
 app.post('/recommend', (request, response) => {
   const restaurant = request.body;
+  restaurant.id = uuid.v4();
   const filePath = path.join(__dirname, 'data', 'restaurants.json');
   const filedata = fs.readFileSync(filePath);
   const storedRestaurants = JSON.parse(filedata);
