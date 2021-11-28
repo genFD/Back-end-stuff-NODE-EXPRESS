@@ -1,24 +1,24 @@
 [
  {
   "id": "r1",
-  "name": "cooper branch",
-  "address": "51st montreal",
-  "cuisine": "euro",
+  "name": "Cooper Branch",
+  "address": "51st Montreal",
+  "cuisine": "Euro",
   "website": "http://www.copperbrranch.com",
   "description": "it's awesome"
  },
  {
   "id": "r2",
-  "name": "donda",
-  "address": "21 kanyewestst",
-  "cuisine": "american",
+  "name": "Donda",
+  "address": "21 Kanyewest st",
+  "cuisine": "American",
   "website": "http://www.knayewest.com",
   "description": "it's crazy"
  },
  {
-  "name": "columbia food",
-  "address": "first street 5  north w",
-  "cuisine": "columbia",
+  "name": "Columbia food",
+  "address": "1st Street 5 NW",
+  "cuisine": "Columbia",
   "website": "https://www.columbiaheaven.com",
   "description": "delicious food, nice waitress",
   "id": "8db0e7c7-1837-4154-8a95-139c6785a866"
