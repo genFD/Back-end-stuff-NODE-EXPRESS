@@ -18,6 +18,7 @@ const fs = require('fs');
 const express = require('express');
 const uuid = require('uuid');
 const path = require('path');
+const { response } = require('express');
 
 // 2. invoke express
 const app = express();
@@ -43,6 +44,7 @@ app.get('/about', (request, response) => {
   // response.sendFile(aboutHtmlFile);
   response.render('about');
 });
+
 app.get('/confirm', (request, response) => {
   // const confirmHtmlFile = path.join(__dirname, 'views', 'confirm.html');
   // response.sendFile(confirmHtmlFile);
@@ -98,6 +100,11 @@ app.get('/restaurants/:id', (request, response) => {
   }
   response.render('404');
 });
-
+app.use((request, response) => {
+  response.render('404');
+});
+app.use((error, request, response, next) => {
+  response.render('500');
+});
 // 5. listen to a port i.e incoming network traffic
 app.listen(3008);
