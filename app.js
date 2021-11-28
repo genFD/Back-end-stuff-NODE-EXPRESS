@@ -96,6 +96,7 @@ app.get('/restaurants/:id', (request, response) => {
       });
     }
   }
+  response.render('404');
 });
 
 // 5. listen to a port i.e incoming network traffic
